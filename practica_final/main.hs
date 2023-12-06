@@ -13,12 +13,13 @@ import Server
 
 
 
-home_page:: Request -> IO()
+home_page:: RequestHandler
 home_page req = do
     let a = handler req
-
+    putStrLn $ "Manejando peticion a " ++ path req
     case path req of
         "/home" -> set_dynamic_view a "/WEB-INF/jsps/home/home.jsp"
+        _ -> hPutStrLn a "[ERROR] pagina no enrutada"
     hPutStrLn a ""
 
 routes = [("/", home_page)]
