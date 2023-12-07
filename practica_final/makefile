@@ -1,6 +1,7 @@
 run: 
 	ghc main.hs
-	clear
+	rm *.hi
+	rm *.o
 	./main
 
 clear:

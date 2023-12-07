@@ -1,0 +1,76 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Oct 16, 2023, 7:30:03 PM
+    Author     : sergio
+*/
+
+/*
+body {
+    background-color: #111417;
+}
+*/
+
+.pie_menu {
+    text-align: center;
+}
+
+.pie_menu section {
+
+    filter: invert(70%);
+}
+
+.main_menu {
+    float: left;
+    /*margin-right: 5rem;*/
+    width: 2rem;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: #999999;
+
+    transition-property: width;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.main_menu:hover {
+    width: 10rem;
+    transition-property: width;
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.main_menu div a img {
+    filter: invert(70%);
+}
+
+.main_menu div a span {
+    opacity: 0;
+    color: #a7afbe;
+    visibility: hidden;
+}
+
+
+.main_menu:hover div a span {
+    opacity: 1;
+    visibility: visible;
+    transition-property: opacity;
+    transition-duration: 0.15s;
+    transition-delay: 0.15s;
+}
+
+
+.no-invert {
+    filter: invert(0%) !important;
+}
+
+
+footer {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #999999;
+}
