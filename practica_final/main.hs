@@ -52,13 +52,13 @@ home_page req = do
 -- Aqui definimos que rutas son manejadas por que funciones.
 --      En este caso todo lo que llegue a "/*" (osea / seguido de cualquier cosa)
 --      va a ser manejado por la funcion home_page
-r :: [(String, RequestHandler)]
-r = [("/", home_page)]
+rutes :: [(String, RequestHandler)]
+rutes = [("/", home_page)]
 
 
 -- Crear la configuracion y arrancar el servidor
 -- Una vez arrancado el servidor pulsando "Enter" se para
 main :: IO ()
 main = do
-    let sc = ServerConfig{port="8080", routes = r}
+    let sc = ServerConfig{port="8080", routes = rutes}
     run_server sc

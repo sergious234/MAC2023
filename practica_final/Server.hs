@@ -52,6 +52,7 @@ import qualified Data.ByteString as BS
 import Rutas (get_posible_routes)
 import Hsp (process_file)
 import System.FilePath (takeExtension)
+import qualified Language.Haskell.Interpreter as Hint
 
 type RequestHandler = (Request -> IO ())
 type Route = (String, RequestHandler)

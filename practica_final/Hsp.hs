@@ -7,7 +7,6 @@
 
 module Hsp(
     process_file,
-    get_fragment_path
 )  where
 
 import System.Directory
